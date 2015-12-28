@@ -6,20 +6,20 @@
 	Goodbye();	
 	}, 10000);	
     var commands = {
-      'Wake up': function() {
+      'Wake up': {'regexp':/^(Wake up|Wakeup|Wake-up)$/, 'callback':function() {
         console.log('Hello world!');
 		document.getElementById('cover').style.width = "0";
 		document.getElementById('cover').style.height = "0";     
 		var handle = Meteor.setTimeout(function() {Goodbye();},30000);
 		Session.set("handleid",handle);
-	  },
+	  }},
 
-      'Go to sleep': Goodbye,
+      'Go to sleep': {'regexp':/^(Go to sleep|Gotosleep|Go tosleep|Goto sleep|Go-to-sleep)$/, 'callback':Goodbye},
 	  
-	  'Stay awake': function() {
+	  'Stay awake': {'regexp':/^(Stay awake|Stayawake|Stay-awake)$/,'callback':function() {
 		  var handle = Session.get("handleid");
 		  Meteor.clearTimeout(handle);
-	  },
+	  }},
 	  
 	  'reload': function() {
 		  location.reload(true);

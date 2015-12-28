@@ -1,11 +1,11 @@
 {
-  "name": "HomeMirror",
+  "name": "Smart-Mirror",
   "description": "",
-  "version": "0.0.1",
-  "author": "Andy Jiang",
+  "version": "0.9.0",
+  "author": "Sharvil Patankar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lambtron/homemirror"
+    "url": "https://github.com/sspatank/Smart-Mirror"
   },
   "engines": {
     "node": "^4.0.x",
