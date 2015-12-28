@@ -16,7 +16,7 @@
       1. news_api: Get the API key from the New York Times by signing up. [http://developer.nytimes.com/apps/register]
       2. forecastio_api: Get the API key for the weather from Forecast.io [https://developer.forecast.io/register]
       3. geonames_api: This api is used to figure out your localized timezone and weather from your GPS location. Get a username from                        GeoNames. [http://www.geonames.org/login]
-      4. telegram_api: This api is used to send a message and an image to the mirror through the Telegram app. The instructions for            getting the token are given below. [https://core.telegram.org/bots/api]
+      4. telegram_api: This api is used to send a message and an image to the mirror through the Telegram app. The instructions for            getting the token are given [below.] (#telegram) [https://core.telegram.org/bots/api]
       5. defaultmessage: If you don't want to use telegram, it will load this message.
 
 4. Add an image to the public/photos folder and name it image.jpg. This will be the default image that will show up if you don't use      telegram to upload a new image. 
