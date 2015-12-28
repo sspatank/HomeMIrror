@@ -27,7 +27,7 @@
     $ meteor deploy <your-name-here>.meteor.com --settings settings-release.json
     ```
 
-4. Some of these features only work on chrome. I will add a guide on how to enable a Kiosk mode in android below. 
+4. Some of these features only work on chrome. I will add a guide on how to enable a Kiosk mode in android below. (#kiosk-mode)
 
 5. Follow [Hannah Mitt's tutorial](https://github.com/HannahMitt/HomeMirror) for physically building the mirror or [lambtron's below](#hardware)
 
@@ -101,7 +101,7 @@ Use the spray adhesive at about 6-8 inches away from the construction paper. Don
 
 #### 3. Add adhesive strips to the back of the construction paper around the edge of the device's viewport cutout
 
-#### 4. Set the device up.. last chance to touch your device! (#kiosk)
+#### 4. Set the device up.. last chance to touch your device! (#kiosk-mode)
 
 #### 5. Stick the device onto the two-way adhesive strips
 
