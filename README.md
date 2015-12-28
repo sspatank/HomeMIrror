@@ -12,7 +12,7 @@
 2. Clone this repo
 
     ```
-    $ git clone git@github.com:lambtron/homemirror.git
+    $ git clone git@github.com:sspatank/Smart-Mirror.git
     ```
 
 3. Deploy to Meteor
