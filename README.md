@@ -143,6 +143,13 @@ The completed mirror:
 ![](http://i.imgur.com/IxgfxQx.jpg)
 
 
+## Acknowledgements
+
+This project would not have been possible without the framework that [Andy Jiang's project](https://github.com/lambtron/homemirror) gave. In addition to him, I would also like to acknowledge:
+ 1. [Hannah Mit] (https://github.com/HannahMitt/HomeMirror), from whom I got the xkcd idea
+ 2. [Evan Cohen] (https://github.com/evancohen/smart-mirror) , from whom I got the idea of using [annyang](https://github.com/TalAter/annyang), the voice assistant 
+ 3. [Michael Teeuw] (https://github.com/MichMich/MagicMirror) who started it all for me
+ 4. [Max Malm](https://github.com/benjick) whose api wrapper and timely help made the telegram integration possible
 
 ## License (MIT)
 
