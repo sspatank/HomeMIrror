@@ -96,10 +96,10 @@ Here are the steps:
 ## Telegram
 
 Telegram is a messaging app like Whatsapp. It has quite a few more features including bots. I used these bots to send messages and photos to the mirror remotely. In order to do that you will need to:
-1. Download and setup telegram on your phone. 
-2. Create a bot with the help of the BotFather [https://core.telegram.org/bots#botfather]
-3. Add the commands /test and /m to it. 
-4. Get the token and put it into the settings-release.json file. 
+ 1. Download and setup telegram on your phone. 
+ 2. Create a bot with the help of the BotFather [https://core.telegram.org/bots#botfather]
+ 3. Add the commands /test and /m to it. 
+ 4. Get the token and put it into the settings-release.json file. 
 
 
 ## Hardware
