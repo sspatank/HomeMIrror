@@ -2,6 +2,18 @@
 
 > Web-based home mirror, forked from [Andy Jiang's project](https://github.com/lambtron/homemirror).
 
+## Features
+ - Date
+ - Time
+ - Current temperature and minimum temperature of the day and the current weather condition
+ - The weekly max and min temperature along with the weekly weather condition
+ - A personalised message that can be updated through the telegram messaging app
+ - A perosonalised photo that can be updated through the telegram messaging app
+ - The current xkcd comic with the alt text
+ - Top news from the New York Times (commented out but can be enabled).
+ - Voice commands that are used turn the screen on and off and reload the page
+
+
 ## Install
 
 1. [Install Meteor](https://www.meteor.com/install)
