@@ -76,6 +76,31 @@ Every "widget" on the screen can be found in the [`./widgets`](https://github.co
 
 Have fun!
 
+## Kiosk Mode
+To enable kiosk mode, you will need:
+ 1. A rooted android tablet. There are root guides for the nexus 7 2012 available here [http://forum.xda-developers.com/showthread.php?t=1766475]
+ 2. The latest chrome browser
+ 3. Tasker (free) [https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en]
+ 4. GMD Full Screen Immersive Mode (paid, if you don't want to get annoyed) [https://play.google.com/store/apps/details?id=com.gmd.immersive&hl=en]
+ 5. MyPhoneExplorer on your tablet and on your computer
+
+Here are the steps:
+ 1. Root your device using the link I gave above or go here [http://forum.xda-developers.com/] to get the instructions for your device.
+ 2. Browse to your website and add it to the homescreen. Make sure this is on your homepage i.e. this is the screen that pops up when you power your device on. 
+ 3. Enable Developers Options on your tablet using this. [http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html]
+ 4. Follow these instructions to autostart your homescreen shortcut when your device powers on. [http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html]
+ 5. Enable fullscreen mode in GMD Full Screen Immersive Mode and try to minimize the trigger so that it doesn't show up on the mirror. I ended up getting the pro version. 
+ 6. Enable USB debugging and connect MyPhoneExplorer to your computer and try to control your tablet using the computer. This is for when you need to control your tablet after you have stuck a mirror on it. 
+ 7. All these steps are essentially so that you can get an immersive full screen experience. If you find an easier way to get this done, do follow it and let me know too. 
+
+## Telegram
+
+Telegram is a messaging app like Whatsapp. It has quite a few more features including bots. I used these bots to send messages and photos to the mirror remotely. In order to do that you will need to:
+1. Download and setup telegram on your phone. 
+2. Create a bot with the help of the BotFather [https://core.telegram.org/bots#botfather]
+3. Add the commands /test and /m to it. 
+4. Get the token and put it into the settings-release.json file. 
+
 
 ## Hardware
 
@@ -118,30 +143,6 @@ The completed mirror:
 ![](http://i.imgur.com/IxgfxQx.jpg)
 
 
-## Kiosk Mode
-To enable kiosk mode, you will need:
- 1. A rooted android tablet. There are root guides for the nexus 7 2012 available here [http://forum.xda-developers.com/showthread.php?t=1766475]
- 2. The latest chrome browser
- 3. Tasker (free) [https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en]
- 4. GMD Full Screen Immersive Mode (paid, if you don't want to get annoyed) [https://play.google.com/store/apps/details?id=com.gmd.immersive&hl=en]
- 5. MyPhoneExplorer on your tablet and on your computer
-
-Here are the steps:
- 1. Root your device using the link I gave above or go here [http://forum.xda-developers.com/] to get the instructions for your device.
- 2. Browse to your website and add it to the homescreen. Make sure this is on your homepage i.e. this is the screen that pops up when you power your device on. 
- 3. Enable Developers Options on your tablet using this. [http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html]
- 4. Follow these instructions to autostart your homescreen shortcut when your device powers on. [http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html]
- 5. Enable fullscreen mode in GMD Full Screen Immersive Mode and try to minimize the trigger so that it doesn't show up on the mirror. I ended up getting the pro version. 
- 6. Enable USB debugging and connect MyPhoneExplorer to your computer and try to control your tablet using the computer. This is for when you need to control your tablet after you have stuck a mirror on it. 
- 7. All these steps are essentially so that you can get an immersive full screen experience. If you find an easier way to get this done, do follow it and let me know too. 
-
-## Telegram
-
-Telegram is a messaging app like Whatsapp. It has quite a few more features including bots. I used these bots to send messages and photos to the mirror remotely. In order to do that you will need to:
-1. Download and setup telegram on your phone. 
-2. Create a bot with the help of the BotFather [https://core.telegram.org/bots#botfather]
-3. Add the commands /test and /m to it. 
-4. Get the token and put it into the settings-release.json file. 
 
 ## License (MIT)
 
