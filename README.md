@@ -1,10 +1,6 @@
 # Home Mirror
 
-> Web-based home mirror, inspired by [Hannah Mitt's project](https://github.com/HannahMitt/HomeMirror).
-
-![](https://cldup.com/LJ6cSwHEjW.png)
-
-![](https://cldup.com/DNBM8NSBSD.png)
+> Web-based home mirror, forked from [Andy Jiang's project](https://github.com/lambtron/homemirror).
 
 ## Install
 
@@ -15,18 +11,27 @@
     $ git clone git@github.com:sspatank/Smart-Mirror.git
     ```
 
-3. Deploy to Meteor
+3. Configure the settings.release.json file
+      The configuration file is used to put in the relevant Api keys and tokens. You add the following keys:
+      1. news_api: Get the API key from the New York Times by signing up. [http://developer.nytimes.com/apps/register]
+      2. forecastio_api: Get the API key for the weather from Forecast.io [https://developer.forecast.io/register]
+      3. geonames_api: This api is used to figure out your localized timezone and weather from your GPS location. Get a username from                        GeoNames. [http://www.geonames.org/login]
+      4. telegram_api: This api is used to send a message and an image to the mirror through the Telegram app. The instructions for            getting the token are given below. [https://core.telegram.org/bots/api]
+      5. defaultmessage: If you don't want to use telegram, it will load this message.
+
+4. Add an image to the public/photos folder and name it image.jpg. This will be the default image that will show up if you don't use      telegram to upload a new image. 
+
+5. Deploy to Meteor
 
     ```
-    $ meteor deploy <your-name-here>.meteor.com
+    $ meteor deploy <your-name-here>.meteor.com --settings settings-release.json
     ```
 
-4. Point your tablet to the URL and enable Kiosk mode
-5. Follow [Hannah Mitt's tutorial](https://github.com/HannahMitt/HomeMirror) for physically building the mirror or [mine below](#hardware)
+4. Some of these features only work on chrome. I will add a guide on how to enable a Kiosk mode in android below. 
+
+5. Follow [Hannah Mitt's tutorial](https://github.com/HannahMitt/HomeMirror) for physically building the mirror or [lambtron's below](#hardware)
 
 ## Customize
-
-I decided to use Meteor for its real-time nature and ability to organize server and client side JavaScript in the same file.
 
 Every "widget" on the screen can be found in the [`./widgets`](https://github.com/lambtron/homemirror/tree/master/widgets) folder. Let's look at the [`time`](https://github.com/lambtron/homemirror/tree/master/widgets/time) widget as an example:
 
@@ -71,6 +76,7 @@ Every "widget" on the screen can be found in the [`./widgets`](https://github.co
 
 Have fun!
 
+
 ## Hardware
 
 I followed [Hannah's guide](https://github.com/HannahMitt/HomeMirror) pretty closely.
@@ -95,13 +101,7 @@ Use the spray adhesive at about 6-8 inches away from the construction paper. Don
 
 #### 3. Add adhesive strips to the back of the construction paper around the edge of the device's viewport cutout
 
-#### 4. Set the device up.. last chance to touch your device!
-
-The two (free) apps I needed to download were:
-- [Stay Alive!](https://play.google.com/store/apps/details?id=com.synetics.stay.alive&hl=en): for preventing the device from sleeping
-- [Kiosk Browser](http://appcrawlr.com/android/kiosk-browser-2): so that you can set the browser to the Home Mirror web app in full screen mode (probably not even necessary, but this is my first Android device and I struggled with even the most basic navigation)
-
-Set the Kiosk Browser to point to your Home Mirror web app domain.
+#### 4. Set the device up.. last chance to touch your device! (#kiosk)
 
 #### 5. Stick the device onto the two-way adhesive strips
 
@@ -116,6 +116,32 @@ If the final product is facing the ground, this is how and where the pieces fit 
 The completed mirror:
 
 ![](http://i.imgur.com/IxgfxQx.jpg)
+
+
+## Kiosk Mode
+To enable kiosk mode, you will need:
+ 1. A rooted android tablet. There are root guides for the nexus 7 2012 available here [http://forum.xda-developers.com/showthread.php?t=1766475]
+ 2. The latest chrome browser
+ 3. Tasker (free) [https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=en]
+ 4. GMD Full Screen Immersive Mode (paid, if you don't want to get annoyed) [https://play.google.com/store/apps/details?id=com.gmd.immersive&hl=en]
+ 5. MyPhoneExplorer on your tablet and on your computer
+
+Here are the steps:
+ 1. Root your device using the link I gave above or go here [http://forum.xda-developers.com/] to get the instructions for your device.
+ 2. Browse to your website and add it to the homescreen. Make sure this is on your homepage i.e. this is the screen that pops up when you power your device on. 
+ 3. Enable Developers Options on your tablet using this. [http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html]
+ 4. Follow these instructions to autostart your homescreen shortcut when your device powers on. [http://www.greenbot.com/article/2457986/how-to-enable-developer-options-on-your-android-phone-or-tablet.html]
+ 5. Enable fullscreen mode in GMD Full Screen Immersive Mode and try to minimize the trigger so that it doesn't show up on the mirror. I ended up getting the pro version. 
+ 6. Enable USB debugging and connect MyPhoneExplorer to your computer and try to control your tablet using the computer. This is for when you need to control your tablet after you have stuck a mirror on it. 
+ 7. All these steps are essentially so that you can get an immersive full screen experience. If you find an easier way to get this done, do follow it and let me know too. 
+
+## Telegram
+
+Telegram is a messaging app like Whatsapp. It has quite a few more features including bots. I used these bots to send messages and photos to the mirror remotely. In order to do that you will need to:
+1. Download and setup telegram on your phone. 
+2. Create a bot with the help of the BotFather [https://core.telegram.org/bots#botfather]
+3. Add the commands /test and /m to it. 
+4. Get the token and put it into the settings-release.json file. 
 
 ## License (MIT)
 
