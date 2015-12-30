@@ -21,7 +21,6 @@ momentjs:moment
 mdg:geolocation
 reactive-var
 http
-astronomerio:core
 remcoder:chronos
 autopublish
 force-ssl
@@ -33,3 +32,5 @@ cfs:standard-packages
 cfs:gridfs
 cfs:filesystem
 emojione:emojione
+react
+react-template-helper
